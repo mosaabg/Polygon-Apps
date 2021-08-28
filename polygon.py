@@ -17,6 +17,10 @@ if Choice < 1 or Choice > 4:
     exit()
 
 Sides_Number = int(input(Fore.GREEN +"Input number of sides: "))
+if Sides_Number < 3:
+    print (Fore.RED +"there are no 2D shapes with sides less than 3 sides...")
+    print (Style.RESET_ALL)
+    exit()
 Side_Length = float(input(Fore.GREEN +"Input the lenght of the side: "))
 
 Polygon_Perimeter = Sides_Number * Side_Length
